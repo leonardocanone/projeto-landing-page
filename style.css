@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --trigo: #8b7418;
+    --trigo-hover: #ad9226;
+    /* --trigo: #7e6915; */
+    /* --trigo0: #786518; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    /* color: black; */
+}
+
+a { 
+    color: white;
+} 
+
+/* HEADER */
+.cabecalho-imagem{
+    padding-top: 1vh;
+    padding-left: 0.5vw;
+    padding-right: 4vh;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    /* border-bottom: 2px solid var(--trigo); */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    position: fixed;
+    top: 0;
+    /* height: 12.5vh; */
+    height: 12vh;
+    background-color: var(--trigo);
+}
+
+.cabecalho-menu-0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3vw;
+    gap: 1.5rem ;
+}
+
+.cabecalho-menu li a:visited{
+    /* color: rgb(165, 91, 42); */
+    color: white;
+}
+
+.cabecalho-menu li a:hover{
+    color: black;
+}
+
+.botao-login{
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.botao-login:hover{
+    background-color: rgb(51, 47, 47);
+    color: white;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 32px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 5px 15px;
+}
+
+/* SEÇÃO PRINCIPAL */
+#secao-principal{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    height: 88vh;
+    margin-top: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2.5%; */
+    /* box-shadow: 0 0.1rem 0.5rem #ccc; */
+    background-image: url("media/Frutas\ página\ inicial.jpeg");
+    background-repeat: no-repeat;
+    background-size: 17%;
+    background-position: right 1.5% bottom 7%;
+}
+
+.secao-principal-img img{
+    width: 110%;
+    padding: 0 10%;
+}
+
+.secao-principal-texto{
+    max-width: 50rem;
+    padding: 0 10%;
+    padding-left: 6%;
+    padding-bottom: 3%;
+}
+
+.secao-principal-texto .texto-sec-principal-h3{
+    font-size: 2.3rem;
+    color: var(--trigo);
+    margin-bottom: 1rem;
+}
+
+.secao-principal-texto .texto-sec-principal-h2{
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.secao-principal-texto img{
+    display: none;
+}
+
+.botao-sec-principal{
+    width: 12vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: var(--trigo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.botao-sec-principal:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+/* Responsividade Header e Seção inicial - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .menu.ativo .bar:nth-child(1){
+    transform:  translateY(15px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+    transform: translateY(-15px) rotate(-45deg);
+    } 
+
+    .cabecalho-menu{
+        position: fixed;
+        right: -100%;
+        top: 68.5px;
+        width: 100%;
+        height: 60%;
+        flex-direction: column;
+        background: var(--trigo-hover);
+        gap: -10px;
+        margin: 12px 0;
+        justify-content: center;
+
+    }
+
+    .cabecalho-menu.ativo{
+        right: 0;
+    }
+
+    .cabecalho-imagem{
+        padding-left: 7px;
+    }
+
+    #secao-principal{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 130vh;
+        text-align: center;
+        background-image: none;
+    }
+
+    .secao-principal-img img{
+        width: 85%;
+        margin-bottom: 0;
+    }
+
+    .secao-principal-texto .texto-sec-principal-h3{
+        font-size: 1.7rem;
+        padding-left: 5%;
+    }
+    
+    .secao-principal-texto .texto-sec-principal-h2{
+        font-size: 1.33rem;
+        padding-left: 5%;
+    }
+
+    .secao-principal-texto img{
+        display: flex;
+        width: 75%;
+        margin-left: 16%;
+        margin-top: -3.2vh;
+    }
+
+    .botao-sec-principal{
+        display: none;
+    }
+}
+
+
+/* QUEM SOMOS */
+#sobre{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    height: 110vh;
+    /* margin-top: 12vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2.5%; */
+}
+
+.quem-somos-img img{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.quem-somos-texto{
+    max-width: 45rem;
+    padding: 0 7%;
+}
+
+.quem-somos-texto .texto-quem-somos-h3{
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-bottom: 1rem;
+}
+
+.quem-somos-texto .texto-quem-somos-h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.botao-quem-somos{
+    width: 12vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: var(--trigo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-quem-somos:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+/* Responsividade Quem somos - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    #sobre{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 135vh;
+        text-align: center;
+    }
+
+    .quem-somos-img img{
+        width: 95%;
+    }
+
+    .quem-somos-texto .texto-quem-somos-h3{
+        font-size: 1.8rem;
+        border-bottom: var(--trigo) 2.5px solid;
+        margin-bottom: 8%;
+        margin-top: 13vh;
+    }
+    
+    .quem-somos-texto .texto-quem-somos-h2{
+        font-size: 1.3rem;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .botao-quem-somos{
+        display: none;
+    }
+}
+
+
+
+/* NOSSO DIFERENCIAL */
+#nosso{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    height: 110vh;
+    /* margin-top: 12vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2.5%; */
+}
+
+.diferencial-img img{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.diferencial-texto{
+    max-width: 45rem;
+    padding: 0 6%;
+}
+
+.diferencial-texto .texto-diferencial-h3{
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-bottom: 1rem;
+}
+
+.diferencial-texto .texto-diferencial-h2{
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.botao-diferencial{
+    width: 18vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: var(--trigo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-diferencial:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+/* Responsividade Nosso diferencial - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    #nosso{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 150vh;
+        text-align: center;
+    }
+
+    .diferencial-img img{
+        width: 95%;
+    }
+
+    .diferencial-texto .texto-diferencial-h3{
+        font-size: 1.8rem;
+        border-bottom: var(--trigo) 2.5px solid;
+        margin-bottom: 8%;
+        margin-top: 14vh;
+    }
+    
+    .diferencial-texto .texto-diferencial-h2{
+        font-size: 1.2rem;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .botao-diferencial{
+        display: none;
+    }
+}
+
+
+/* COMPRAS DE MERCADO */
+#mercado{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    height: 110vh;
+    /* margin-top: 12vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2.5%; */
+}
+
+.mercado-img img{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.mercado-texto{
+    max-width: 45rem;
+    /* padding: 0 5.5%; */
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.mercado-texto .texto-mercado-h3{
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-bottom: 1rem;
+}
+
+.mercado-texto .texto-mercado-h2{
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+
+.botao-mercado{
+    width: 18vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: var(--trigo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-mercado:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+/* Responsividade Mercado - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    #mercado{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 190vh;
+        text-align: center;
+    }
+
+    .mercado-img img{
+        width: 95%;
+        margin-bottom: 0;
+    }
+
+    .mercado-texto{
+        padding-right: 5%;
+    }
+
+    .mercado-texto .texto-mercado-h3{
+        font-size: 1.8rem;
+        border-bottom: var(--trigo) 2.5px solid;
+        margin-bottom: 7%;
+        margin-top: 14vh;
+    }
+    
+    .mercado-texto .texto-mercado-h2{
+        font-size: 1.2rem;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .botao-mercado{
+        display: none;
+    }
+}
+
+/* COMPRAS DE COMIDA */
+#comida{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto-comida-h3{
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-bottom: 0.1rem;
+    margin-top: 4.5rem;
+}
+
+.texto-comida-h2{
+    font-size: 1.1rem;
+    padding: 0 4%;
+    text-align: center;
+}
+
+.botao-comida{
+    width: 17vw;
+    height: 5.5vh;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: var(--trigo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 41%; */
+    margin: 0.5% 41%;
+}
+
+.botao-comida:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+.container-marmitas{
+    display: flex;
+    padding: 2px 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fotos-marmitas{
+    width: 12vw;
+    height: 29vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+}
+
+figcaption{
+    width: 11.5vw;
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure{
+    border: 1.5px solid var(--trigo);
+    border-radius: 12px;
+    box-shadow: 0 1rem 1.5rem #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Responsividade Comida - iPhone 6/7/8 */
+@media (max-width : 800px) {
+    #comida{
+        min-height: 340vh;
+    }
+
+    .texto-comida-h3{
+        font-size: 1.9rem;
+        border-bottom: var(--trigo) 2.5px solid;
+        margin-bottom: 8%;
+        margin-top: 13vh;
+    }
+
+    .texto-comida-h2{
+        font-size: 1.2rem;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .botao-comida{
+        width: 50vw;
+        height: 7vh;
+        border-radius: 10px;
+        font-size: 1rem;
+        background-color: var(--trigo);
+        color: white;
+        margin: 8% 25%;
+    }
+
+    .container-marmitas{
+        justify-content: center;
+    }
+
+    .fotos-marmitas{
+    width: 100%;
+    }
+
+    figcaption{
+    width: 20vh;
+    }
+}
+
+
+/* CONTATO */
+#contato{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    height: 110vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 16% 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.cabecalho-contato{
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    justify-content: center;
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-top: 11%;
+
+}
+
+.email-telefone-endereco i{
+    font-size: 3rem;
+    margin-top: 18%;
+    margin-bottom: 3%;
+}
+
+.email-telefone-endereco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15%;
+}
+
+.reclamacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 56vh;
+    gap: 8%;
+    margin: 10%;
+}
+
+.reclamacao p{
+    font-size: 1.1rem;
+    margin-top: 18%;
+}
+
+.reclamacao button{
+    width: 12vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    background-color: var(--trigo);
+    color: white;
+}
+
+.reclamacao button:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.redes-sociais i{
+    font-size: 3rem;
+    margin-top: 60%;
+    height: 15vh;
+}
+
+.redes-sociais a:visited{
+    color: black;
+}
+
+/* Responsividade Contato - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    #contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 200vh;
+        text-align: center;
+    }
+
+    .cabecalho-contato{
+        font-size: 1.9rem;
+        border-bottom: var(--trigo) 2.5px solid;
+        margin-top: 9vh;
+    }
+
+    .email-telefone-endereco{
+        margin-top: -35px;
+    }
+
+    .reclamacao p{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--trigo);
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+
+    .reclamacao button{
+        width: 45vw;
+        height: 7vh;
+        border-radius: 10px;
+        font-size: 1rem;
+        background-color: var(--trigo);
+        color: white;
+        margin-top: 3%;
+    }
+
+    .redes-sociais{
+        margin-top: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 10vh;
+    }
+
+    .redes-sociais h2{
+        grid-column: 1 / 4;
+    }
+}
+
+
+/* CADASTRO */
+#cadastro{
+    /* border: 1px solid brown; */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    height: 105vh;
+    margin-bottom: -3%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-cadastro{
+    display: flex;
+    width: 65vw;
+    height: 65vh;
+    padding: 0 5%;
+}
+
+.cadastre-se{
+    width: 90vw;
+    padding: 0 10%;
+}
+
+.cadastre-se h2{
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-bottom: 6%;
+}
+
+.cadastre-se button{
+    width: 12vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: var(--trigo);
+    color: white;
+    margin-top: 3%;
+}
+
+.cadastre-se button:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+/* Responsividade Cadastro - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    #cadastro{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 90vh;
+        text-align: center;
+    }
+
+    .cadastre-se h2{
+        font-size: 1.9rem;
+        border-bottom: var(--trigo) 2.5px solid;
+        margin-bottom: 20%;
+    }
+
+    .logo-cadastro{
+        display: none;
+    }
+
+    .cadastre-se button{
+        width: 40vw;
+        height: 7vh;
+        border-radius: 10px;
+        font-size: 1rem;
+        background-color: var(--trigo);
+        color: white;
+        margin-top: 3%;
+    }
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--trigo);
+    color: white;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+}
+
+footer a{
+    font-size: 1.5rem;
+}
+
+footer a i{
+    font-size: 1.9rem;
+}
+
+footer a:visited{
+    color: white;
+}
+
+/* Responsividade Footer - iPhone 6/7/8 */
+@media (max-width : 800px) {
+    footer{
+        flex-wrap: wrap;
+        min-height: 15vh;
+    }
+}
+
+/* ÁREA DE LOGIN */
+.body-login{
+    border: 30px var(--trigo) solid;
+}
+
+.main-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91.4vh;
+    width: 95vw;
+}
+
+.logo-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55vw;
+    height: 55vh;
+    padding: 0 12%;
+}
+
+.botao-voltar-para-home{
+    width: 12.5vw;
+    min-height: 6vh;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: var(--trigo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 4%;
+}
+
+.botao-voltar-para-home:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+.campos-login{
+    display: flex;
+    width: 45vw;
+}
+
+.campos-login h3{
+    font-size: 2.1rem;
+    color: var(--trigo);
+    margin-bottom: 6%;
+}
+
+.campos-login button{
+    width: 10vw;
+    height: 6vh;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: var(--trigo);
+    color: white;
+    margin-top: 3%;
+}
+
+.campos-login button:hover{
+    background-color: var(--trigo-hover);
+    color: black;
+}
+
+/* Responsividade LOGIN - iPhone 6/7/8 */
+@media (max-width : 800px) {
+
+    .main-login{
+        min-height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .logo-login{
+        padding: 0;
+        max-height: 100%;
+        max-width: 60%;
+        margin-right: 13%;
+    }
+
+    .botao-voltar-para-home{
+        width: 40vw;
+        height: 5vh;
+        margin-left: 13%;
+        margin-top: 2%;
+    }
+
+    .campos-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15%;
+        min-height: 50%;
+    }
+    
+    .campos-login h3{
+        /* margin-top: 5%; */
+    }
+    
+    .campos-login button{
+        width: 40vw;
+        height: 6vh;
+        margin-bottom: 5%;
+    }
+
+}

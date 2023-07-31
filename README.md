@@ -1,3 +1,53 @@
+## O que sugeria para este projeto o bootcamp Labenu
+O objetivo era criar uma Landing Page, escolhendo como base uma das empresas fictícias já sugeridas pela escola.
+Como sou um profissional do Varejo, decidi escolher a 4Food para desenvolver o projeto.
+
+## Qual era o objetivo esperado pelo cliente 4Food quanto a sua Landing Page
+O 4Food é um projeto de uma grande rede de supermercados que está buscando se digitalizar e criar um sistema de compras e entregas recorrentes por aplicativo. Você precisa criar uma Landing Page que comunique a velocidade e praticidade da solução, destacando a possibilidade de realizar (i) compras de supermercado online e (ii) compras de comidas prontas com uma frequência semanal.
+
+## Link do surge
+chubby-run.surge.sh
+
+## Abaixo os wireframes iniciais da versão desktop
+![Wireframe desktop 1](/wireframes/Wireframe%20desktop%201.png)
+![Wireframe desktop 2](/wireframes/Wireframe%20desktop%202.png)
+![Wireframe desktop 3](/wireframes/Wireframe%20desktop%203.png)
+
+## Agora os prints do site da versão desktop
+![Print site desktop 1](/prints-site-desktop/Print%20Site%201%20-%20Seção%20inicial.png)
+![Print site desktop 2](/prints-site-desktop/Print%20Site%202%20-%20Quem%20somos.png)
+![Print site desktop 3](/prints-site-desktop/Print%20Site%203%20-%20Nosso%20diferencial.png)
+![Print site desktop 4](/prints-site-desktop/Print%20Site%204%20-%20Compras%20de%20mercado.png)
+![Print site desktop 5](/prints-site-desktop/Print%20Site%205%20-%20Compras%20de%20comida.png)
+![Print site desktop 6](/prints-site-desktop/Print%20Site%206%20-%20Canais%20de%20Contato.png)
+![Print site desktop 7](/prints-site-desktop/Print%20Site%207%20-%20Cadastre-se.png)
+![Print site desktop 8](/prints-site-desktop/Print%20Site%208%20-%20Área%20de%20LOGIN.png)
+
+## Abaixo os wireframes iniciais da versão mobile
+<img style="width:250px" src="./wireframes/Wireframe mobile 1.png" alt="Wireframe mobile 1">
+<img style="width:250px" src="./wireframes/Wireframe mobile 2.png" alt="Wireframe mobile 2">
+
+## Agora os prints do site da versão mobile
+<img style="width:250px" src="./prints-site-mobile/Print mobile 1.png" alt="Print mobile 1">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 2.png" alt="Print mobile 2">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 3.png" alt="Print mobile 3">
+
+<img style="width:250px" src="./prints-site-mobile/Print mobile 4.png" alt="Print mobile 4">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 5.png" alt="Print mobile 5">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 6.png" alt="Print mobile 6">
+
+<img style="width:250px" src="./prints-site-mobile/Print mobile 7.png" alt="Print mobile 7">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 8.png" alt="Print mobile 8">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 9.png" alt="Print mobile 9">
+
+<img style="width:250px" src="./prints-site-mobile/Print mobile 10.png" alt="Print mobile 10">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 11.png" alt="Print mobile 11">
+<img style="width:250px" src="./prints-site-mobile/Print mobile 12.png" alt="Print mobile 12">
+
+<img style="width:250px" src="./prints-site-mobile/Print mobile 13.png" alt="Print mobile 13">
+
+
+.
 # Landing Page
 Nesse projeto, nosso objetivo é criar uma **Landing Page**, ou seja, um site de **apenas uma página** cujo objetivo é atrair clientes e despertar curiosidade e interesse nos serviços e/ou produtos de uma empresa.
 Durante a construção desse site, serão estudados e praticados os seguintes conteúdos:
@@ -19,14 +69,6 @@ As empresas fictícias vão desde um banco digital a uma empresa de seguros, pas
 
 <details>
    <summary>Empresas fictícias</summary>
-   
-
-#### Projeto F4Bank
-
-  O F4Bank é um projeto de um grande banco público brasileiro para competir com as startups que tem surgido, como Nubank, Banco Inter e Banco Neon. Você precisa criar uma landing page que comunique, além da proposta do banco, os produtos "Cartão sem taxa" e "Conta corrente digital", reforçando a segurança de um banco tradicional com décadas de história no país.
-
-[Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
-  
 
 #### Projeto 4Food
 
@@ -35,45 +77,6 @@ As empresas fictícias vão desde um banco digital a uma empresa de seguros, pas
 [Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
   
 
-#### Projeto 4Comfort
-
-  4Comfort é uma nova empresa cuja proposta é oferecer o tênis mais confortável possível. Seguindo modelos americanos como Allbirds e Atom, o tênis é voltado para um público que trabalha em ambientes casuais (startups, empresas de tecnologia, escritórios modernos etc.) e se destaca por ser vendido exclusivamente online.
-
-[Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
-  
-
-#### Projeto F4Life
-
-  F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação. Você precisa criar uma landing page que chame a atenção de pessoas que estão na graduação e ofereça os produtos "moradia compartilhada" e "kitnets".
-
-[Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
-  
-
-#### Projeto Upfour.
-
-  A Upfour é uma empresa que fornece crédito para moradores da periferia começarem seu próprio negócio. Similar a modelos como Creditas, mas concentrado apenas em moradores de periferia, a empresa oferece dois serviços: (i) crédito pessoal ; (ii) sistema de controle e orientação financeira. Você precisa construir um site capaz de atingir esse público em específico, reforçando a oportunidade de mudança de vida e de tornar-se protagonista em seu contexto social.
-
-[Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
-
-
-#### Projeto Log4
-
-  A Log4 é uma empresa de uma grande varejista que, após liderar o mercado de móveis, cama, mesa e banho, resolveu entrar no mercado puro de logística para competir com empresas como Loggi e MadeiraMadeira. Seus dois principais produtos são (i) a distribuição rápida de itens pequenos via motoboys/ciclistas e (ii) a distribuição rápida de móveis ou itens de grande tamanho. Você precisa criar um site capaz de comunicar a tradição e confiança do grupo varejista, mas também se posicionar como uma nova solução de tecnologia que traz velocidade aos clientes.
-
-[Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
- 
-
-#### Projeto 4Cars
-
-  A 4Cars é uma empresa que tem surfado na onda dos apps de motoristas. Sua proposta é oferecer carros para serem alugados por motoristas a um custo razoável, aumentando a oportunidade para quem não têm dinheiro para comprar um carro. Seus concorrentes atuais são empresas tradicionais, como Localiza, e startups, como Kovi. Você tem duas linhas de produto: (i) carros populares e (ii) transporte de luxo. Você precisa criar um site capaz de comunicar modernidade e baixo custo, se posicionando como uma plataforma totalmente digital e de fácil acesso para motoristas jovens que estão buscando entrar nesse mercado.
- 
- [Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
-
-#### Projeto 4Safe
-
-  A 4Safe é uma empresa focada na digitalização dos produtos de seguridade. Sua proposta é oferecer seguros de vida, de carro e outros para clientes jovens que não gostam da burocracia das seguradoras tradicionais (ex: Porto Seguro). Você tem duas linhas de produto para desenvolver: (i) seguro de vida e (ii) seguro de carro. É importante comunicar um tom jovem, mas, ao mesmo tempo, passando bastante segurança para seus clientes, dada a natureza do produto.
-  
-  [Logo aqui](https://labenu.notion.site/Projeto-Landing-Page-WFS-7b37ff1460e741b1b5e1e049d7df9d69)
    </details>
 O enunciado completo está no Sistema de Estudante, na sessão de Projetos https://estudante.labenu.com.br/conteudos/tecnico/projetos
 
