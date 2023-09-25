@@ -6,7 +6,7 @@ Como sou um profissional do Varejo, decidi escolher a 4Food para desenvolver o p
 O 4Food é um projeto de uma grande rede de supermercados que está buscando se digitalizar e criar um sistema de compras e entregas recorrentes por aplicativo. Você precisa criar uma Landing Page que comunique a velocidade e praticidade da solução, destacando a possibilidade de realizar (i) compras de supermercado online e (ii) compras de comidas prontas com uma frequência semanal.
 
 ## Link do surge
-chubby-run.surge.sh
+https://chubby-run.surge.sh/
 
 ## Abaixo os wireframes iniciais da versão desktop
 ![Wireframe desktop 1](/wireframes/Wireframe%20desktop%201.png)
